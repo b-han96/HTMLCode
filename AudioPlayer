@@ -1,0 +1,17 @@
+<!-- Example code for audio player -->
+<audio controls autoplay loop>
+    <source src="https://gdurl.com/WJlA" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Button to stop the loop -->
+<button onclick="stopAudioLoop()">Stop Loop</button>
+
+<script>
+    // Function to stop the audio loop
+    function stopAudioLoop() {
+        var audioPlayer = document.getElementsByTagName('audio')[0];
+        audioPlayer.pause(); // Pause the audio
+        audioPlayer.currentTime = 0; // Rewind the audio to the beginning
+    }
+</script>
